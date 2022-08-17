@@ -6,6 +6,7 @@
   box-sizing: border-box;
   list-style: none;
   font-family: Archivo, sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -16,7 +17,10 @@ a {
     padding-inline: 1rem;
 } */
 /* Utility classes -> */
-
+.bx-code-block,.bx-server{
+  transform: scale(1.5) translateY(10px);
+  display: block;
+}
 .container {
   width: 100%;
   max-width: 1200px;
@@ -24,6 +28,17 @@ a {
 .container-full {
   width: 100%;
 }
+
+.container80{
+  padding-inline:min(20%,70px);
+}
+
+@media(max-width:750px){
+  .container80{
+    padding-inline: 1rem;
+  }
+}
+
 .hide {
   right: -500px;
 }
@@ -197,6 +212,89 @@ a {
   transition: all 0.2s ease-in-out;
   box-shadow: 1px 1px 10px 1px red;
 }
+.projects:active,
+.learn-more:active {
+ box-shadow: none;
+}
+.Skillcontainer{
+  padding-top: 3rem;
+  border-bottom: 3px solid black;
+}
+.SkillsAndExp{
+  margin: auto;
+  padding-block: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.SkillsAndExp>h1{
+  font-family: "DM Serif Display",sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+.skills{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 2px solid black;
+  padding: 1em;
+  background-color: rgb(251, 234, 215);
+}
+.skillcard{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  box-shadow: 0 0 10px 10px rgb(255, 255, 255);
+  /* align-items: center; */
+}
+
+.top{
+  flex-basis: 25%;
+  padding-block: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  border-bottom: 2px solid black;
+}
+.bottom{
+  padding-block:1rem;
+  display:grid ;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-basis: 75%;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+}
+
+.tech{
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+  font-weight: 600;
+}
+
+.tech div:hover{
+  
+  cursor: pointer;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both ;
+  animation-delay: 0.2s;
+}
+
+.Projects{
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  height: 100px;
+}
 
 /* Media queries */
 
@@ -218,6 +316,9 @@ a {
   .links {
     display: none;
   }
+  .bottom{
+    grid-template-columns: 1fr 1fr;
+  }
   .menu {
     display: inline-block;
   }
@@ -226,5 +327,24 @@ a {
   }
   .myImage {
     width: 600px;
+  }
+}
+
+/* Animation */
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
   }
 }

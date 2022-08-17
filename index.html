@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <script src="./script.js" defer></script>
     <title>Anit- Web Developer, UI/UX</title>
   </head>
@@ -14,7 +17,8 @@
       <nav class="container navbar">
         <a href="#"><div class="logo">Anit Kumar Jha.</div></a>
         <ul class="links">
-          <li class="link"><a href="#">Home</a></li>
+          <li class="link"><a href="#hero">Home</a></li>
+          <li class="link"><a href="#skills">Skills</a></li>
           <li class="link"><a href="#">Projects</a></li>
           <li class="link"><a href="#">Contact</a></li>
           <li class="link"><a href="#">Resume</a></li>
@@ -23,23 +27,32 @@
       </nav>
     </header>
     <aside class="sidemenu hide">
-        <div class="container-full sidemenu-heading">
-            <h1>AJ.</h1>
-            <i class="bx bx-x bx-md close"></i>
-        </div>
-        <ul class="side-links">
-            <li>Home</li>
-            <li>Resume</li>
-            <li>Contact</li>
-            <li>Projects</li>
-        </ul>
+      <div class="container-full sidemenu-heading">
+        <h1>AJ.</h1>
+        <i class="bx bx-x bx-md close"></i>
+      </div>
+      <ul class="side-links">
+        <li class="sidelink"><a href="#hero">Home</a></li>
+        <li class="sidelink"><a href="#skills">Skills</a></li>
+        <li class="sidelink"><a href="#">Projects</a></li>
+        <li class="sidelink"><a href="#">Contact</a></li>
+        <li class="sidelink"><a href="#">Resume</a></li>
+      </ul>
     </aside>
     <main class="container-full content">
-      <section class="container-full hero">
+      <section class="container-full hero" id="hero">
         <div class="container nested-hero">
           <div class="hero-desc">
             <h1 class="introduction">
-              Hi!👋 I Am <span style="color: #385974; font-family:'DM Serif Display',sans-serif ">Anit</span> ,<br />
+              Hi!👋 I Am
+              <span
+                style="
+                  color: #385974;
+                  font-family: 'DM Serif Display', sans-serif;
+                "
+                >Anit</span
+              >
+              ,<br />
               a Full-Stack Developer.
             </h1>
             <br />
@@ -51,20 +64,129 @@
             </p>
 
             <div class="hero-btn">
-                <button class="projects">View Projects</button>
+              <button class="projects">View Projects</button>
               <button class="learn-more">Learn More</button>
             </div>
           </div>
           <div class="hero-image">
             <img
-            class="myImage"
-              src="./assets/project-collage.webp"
+              class="myImage"
+              src="./assets/HeroPic.webp"
               alt="Profile Pic"
               style="width: 100%"
             />
           </div>
         </div>
       </section>
+
+      <section class="Skillcontainer container-full" id="skills">
+        <div class="SkillsAndExp container">
+          <h1 class="">Skills And Expertise</h1>
+          <div class="skills container-full">
+            <div class="skillcard">
+              <div class="top">
+                <i class="bx bx-code-block bx-lg"></i>
+                <h1>FRONT-END</h1>
+              </div>
+              <div class="bottom container80">
+                <div class="tech">
+                  <div>
+                    <img src="./assets/html-5.png" alt="HTML" />
+                  </div>
+                  <div>HTML</div>
+                </div>
+                <div class="tech">
+                  <div>
+                    <img src="./assets/css-3.png" alt="CSS3" />
+                  </div>
+                  <div>CSS3</div>
+                </div>
+                <div class="tech">
+                  <div>
+                    <img src="./assets/js.png" alt="JavaScript" />
+                  </div>
+                  <div>JavaScript</div>
+                </div>
+                <div class="tech">
+                  <div>
+                    <img src="./assets/react.png" alt="React Js" />
+                  </div>
+                  <div>React Js</div>
+                </div>
+                <div class="tech">
+                  <div>
+                    <img src="./assets/git.png" alt="git" />
+                  </div>
+                  <div>GIT</div>
+                </div>
+                <div class="tech">
+                  <div>
+                    <img src="./assets/bootstrap.png" alt="BootStrap" />
+                  </div>
+                  <div>BootStrap</div>
+                </div>
+              </div>
+            </div>
+            <div class="skillcard">
+              <div class="top">
+                <i class="bx bx-code-block bx-lg"></i>
+                <h1>BACK-END</h1>
+              </div>
+              <div class="bottom container80">
+                <div class="tech">
+                  <div>
+                    <img src="./assets/node-js.png" alt="node-js" />
+                  </div>
+                  <div>NODE-JS</div>
+                </div>
+                <div class="tech">
+                  <div>
+                    <img src="./assets/linux.png" alt="linux" />
+                  </div>
+                  <div>LINUX</div>
+                </div>
+                <div class="tech">
+                  <div>
+                    <img src="./assets/postman.png" alt="React Js" />
+                  </div>
+                  <div>POSTMAN</div>
+                </div>
+                <div class="tech">
+                  <div>
+                    <img
+                      src="./assets/express.png"
+                      alt="ExpressJs"
+                      style="width: 64px"
+                    />
+                  </div>
+                  <div>EXPRESS -JS</div>
+                </div>
+                <div class="tech">
+                  <div>
+                    <img src="./assets/mongodb.png" alt="mongodb" />
+                  </div>
+                  <div>MongoDB</div>
+                </div>
+                <div class="tech">
+                  <div>
+                    <img src="./assets/nginx.png" alt="nginx" />
+                  </div>
+                  <div>NGINX server</div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="skillcard">
+            <div class="left"></div>
+            <div class="right"></div>
+          </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="Projects">
+        <h1>PROJECTS  ---Coming..⌛⌛⌛⌛⌛</h1>
+        
+      </section>
+       
     </main>
   </body>
 </html>
